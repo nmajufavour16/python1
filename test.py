@@ -1,13 +1,16 @@
 # print("Welcome to Python 101")
-var1 = "hi, i'm PH4YVO"
+var1 = "hi, i'm PH4YVO."
 print(var1)
 
-x = "awesome"
+x = "nawa ohh"
 
 def myfunc():
   x = "fantastic"
-  print("Python is " + x)
+  print("jsyk, Python is " + x)
 
 myfunc()
 
-print("Python is " + x)
+print("Python " + x)
+
+addition = 3 + 5
+print(addition)
