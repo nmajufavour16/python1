@@ -14,3 +14,15 @@ print("Python " + x)
 
 addition = 3 + 5
 print(addition)
+
+for x in "hippopotamus":
+  print(x)
+  
+a = "Hello, World!"
+print(len(a))
+
+babe = "i'm in a relationship"
+if "favour" in babe:
+  print("awwnn, he's taken")
+else:
+  print("single ahh muthafuka")
