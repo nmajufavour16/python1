@@ -20,9 +20,3 @@ for x in "hippopotamus":
   
 a = "Hello, World!"
 print(len(a))
-
-babe = "i'm in a relationship"
-if "favour" in babe:
-  print("awwnn, he's taken")
-else:
-  print("single ahh muthafuka")

@@ -6,8 +6,5 @@ else:
 if "favour" not in relationship:
   print("chai, and he no get babe")
   
-agege_bread = "my girl's bum"
-print(agege_bread.split(" "))
-
-mylist = ["me", "G0D", "my babe", 2, False]
-print(type(mylist))
+breakup = "my heart"
+print(breakup.split(" "))
