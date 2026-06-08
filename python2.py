@@ -31,7 +31,7 @@
 
 sentence = "i'm learning python"
 # print(len(sentence))
-# print("python" in sentence)
+print("python" in sentence)
 # if "python" in sentence:
 #     print("user is learning python")
 # else:
