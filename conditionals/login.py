@@ -1,19 +1,34 @@
-# Create a variable (username & password)
-# Check if username = username and password = password
-# If login details match, print login succesful, else print login failed.
-
-import getpass
 import stdiomask
 
 username = input("Create your username: ").lower()
 password = stdiomask.getpass("Create your password: ")
 
-while True:
-    username_auth = input("Enter your username: ").lower()
-    password_auth = stdiomask.getpass("Enter your password: ")
+count = 0
 
-    if username_auth == username and password_auth == password:
-        print(f"Welcome, {username}, login successful!")
-        break
-    else:
-        print(f"Sorry, login failed! Check your details and try again.")
+while count < 4:
+    username_auth = input("Enter your username: ").lower()
+    
+    if username_auth == username:
+        break 
+        
+    elif username_auth != username:
+        print("Incorrect username! Please try again.")
+        count += 1
+
+if count < 4:
+    count = 0
+    
+    while count < 4:
+        password_auth = stdiomask.getpass(f"Welcome, {username}, enter your password: ")
+        
+        if password_auth == password:
+            print("Login Successful, Welcome!!")
+            break
+        
+        elif password_auth != password:
+            print("Sorry, login failed! Check your password and try again.")
+            count += 1
+            
+if count == 4:
+    print("Sure say na your account, ehh?")
+    print("Login failed, too many failed attempts!")
