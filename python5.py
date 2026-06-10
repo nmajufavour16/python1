@@ -1,5 +1,5 @@
-# list1 = ["obi", "ada", "eze", "fun", "emeka"]
-# list2 = ["favour", "uche", "nmaju"]
+list1 = ["obi", "ada", "eze", "fun", "emeka"]
+list2 = ["favour", "uche", "nmaju"]
 # # print(list1 + list2)
 
 # list1.insert(1, "favour")
@@ -33,12 +33,14 @@
 # #     print(list3)
 
 # # this checks for and prints the names at even index positions in list1
-# list3 = [list1[i] for i in range(len(list1)) if i % 2  == 0]
-# print(list3)
+list3 = [list1[i] for i in range(len(list1)) if i % 2  == 0]
+print(list3)
 
-# for number in range(50):
-#     if number % 5 == 0:
-#         print(number)
+# this checks for numbers between 0 and 50 that are divisible by 5 and prints them
+for number in range(51):
+    if number % 5 == 0:
+        print(number)
         
+# this checks for numbers between 0 and 50 that are divisible by 5 and prints them
 list5 = [number for number in range(51) if number % 5 == 0]
 print(list5)
