@@ -34,4 +34,7 @@ dbconfig = {
 for key, values in dbconfig.items():
     for value in values:
         print(value)
+       
+       # This prints the values in a list while looping through the value items in the dictionary  
+        print(values)
         

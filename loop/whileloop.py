@@ -30,3 +30,18 @@ while count <= 5:
 print(ages)
 for age in ages:
     print(f"I am {age} years old.")
+    
+
+count = 1
+ages = []
+while count <= 5:
+    user_age = input("How old are you?: ").strip()
+    if user_age.isdigit():
+        ages.append(user_age)
+        count += 1
+    else:
+        print("Write your age in figures!")
+    pass
+print(ages)
+for age in ages:
+    print(f"I am {age} years old.")
