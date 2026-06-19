@@ -4,15 +4,15 @@ date = datetime.datetime.now()
 hour = int(date.strftime("%H"))
 
 message = "Good"
-name = input("What's your name?: ").strip().capitalize
+name = input("What's your name?: ").strip().capitalize()
 
 if hour < 12:
-    message += "Morning"
+    message += " Morning."
 elif hour < 16:
-    message += "Afternoon"
+    message += " Afternoon."
 elif hour < 18:
-    message += "Evening"
+    message += " Evening."
 else:
-    message += "Night"
+    message += " Night."
     
 print (f"Hello, {name}, {message}")

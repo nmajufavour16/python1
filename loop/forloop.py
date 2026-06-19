@@ -8,19 +8,19 @@
 #         print(f"your score is: {score}")
 #     elif score 
     
-# Names = ["Favour", "Uche", "Nmaju"]
-# for name in Names:
-#     print(f"Good morning, {name}")
+Names = ["Favour", "Uche", "Nmaju"]
+for name in Names:
+    print(f"Good morning, {name}")
     
-# dbconfig = {
-#     "host": "db.techrise.ng",
-#     "port": 5432,
-#     "name": "analytics.db",
-#     "max_connections": 50
-# }
+dbconfig = {
+    "host": "db.techrise.ng",
+    "port": 5432,
+    "name": "analytics.db",
+    "max_connections": 50
+}
 
-# for key, values in dbconfig.items():
-#     print(f"{key}: {values}")
+for key, values in dbconfig.items():
+    print(f"{key}: {values}")
     
 
 dbconfig = {
