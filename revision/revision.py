@@ -60,16 +60,17 @@ with open("users.csv", "w") as file:
         [2, "Anonymous", 23, "Somewhere"],
         [3, "Anybody", 29, "Aba"],
     ]
-    with open("users.csv", "w", newline = " "):
+with open("users.csv", "w", newline = "") as file:
         writer = csv.writer(file)
         writer.writerows(data)
+        
         print("CSV created successfully!")
         
-    with open("users.csv", "r") as file:
-        reader = csv.reader(file)
+with open("users.csv", "r") as file:
+    reader = csv.reader(file)
         
-        header = next(reader)
-        print(f"Columns: {header}")
+    header = next(reader)
+    print(f"Columns: {header}")
 
     for row in reader:
         user_id = row[0]
@@ -77,6 +78,3 @@ with open("users.csv", "w") as file:
         age = row[2]
         city = row[3]
         print(f"User ID: {user_id}, Name: {name}, Age: {age}, City: {city}")
-        
-
-import pandas as pd
